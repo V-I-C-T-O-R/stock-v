@@ -2,16 +2,16 @@ Stock-V
 ----------
 > 炒股有风险，投资需谨慎
 
-糅合[Sequoia](https://github.com/sngyai/Sequoia)与[py_stock](https://github.com/geeeeeeeek/py_stock)项目功能，统一展现。关于两个项目的详情,请自行前往上述地址查阅
+糅合[Sequoia](https://github.com/sngyai/Sequoia)与[py_stock](https://github.com/geeeeeeeek/py_stock)项目功能，统一展现。关于两个项目的详情，请自行前往上述地址查阅
 
 ##### 所做工作
-* py_stock项目web接口化,定时生成最新看板
+* py_stock项目web接口化，定时生成最新看板
 * py_stock项目去除中转csv文件，直接查询新浪
 * Sequoia去掉中转本地文件，改用sqlite存储查询(建表记得建索引(⊙o⊙)哦)
 * 优化Sequoia逻辑
 * Sequoia企业微信通知(短信懒得弄了-_-)
 
-> 环境统一为python3.5,推荐新建env运行项目
+> 环境统一为python3.5，推荐新建env运行项目
 
 #### 步骤
 1. 请设置tushare pro的token凭证码，如果没有请访问https://tushare.pro注册申请
@@ -26,15 +26,15 @@ Stock-V
 | adj          | str        |     N     |     复权类型(只针对股票)：None未复权 qfq前复权 hfq后复权 , 默认None     |
 | freq         | str        |     Y     |     数据频度 ：1MIN表示1分钟（1/5/15/30/60分钟） D日线 ，默认D     |
 | ma           | list       |     N     |     均线，支持任意合理int数值     |
-2. 注册企业微信新建通知应用,并绑定个人微信通知
+2. 注册企业微信新建通知应用，并绑定个人微信通知
 
 3. pip install -r requirements.txt
 
-4. 启动py_stock服务,直接python run.py. web访问http://localhost:8080访问
+4. 启动py_stock服务,直接python run.py，web访问http://localhost:8080 访问
 效果如图:
 ![2.png](pic/2.png?raw=true "行情看板")
 
-5. 启动Sequoia,直接python stock_choice/god_choice.py. 通过企业微信小助手通知便可得到结果
+5. 启动Sequoia,直接python stock_choice/god_choice.py，通过企业微信小助手通知便可得到结果
 效果如图:
 ![1.jpg](pic/1.jpg?raw=true "信息通知")
 
