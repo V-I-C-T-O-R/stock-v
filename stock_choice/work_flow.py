@@ -1,22 +1,23 @@
 
-from stock_choice import data_fetcher, notice
-from stock_choice import utils
-from stock_choice.strategy import enter as enter
-from stock_choice.strategy import turtle_trade
-from stock_choice.strategy import backtrace_ma250
-from stock_choice.strategy import breakthrough_platform
-from stock_choice.strategy import parking_apron
-from stock_choice.strategy import low_atr
-from stock_choice.strategy import keep_increasing
+import datetime
+import logging
+import time
+
+import pandas as pd
 import tushare as ts
 
-import logging
+from stock_choice import data_fetcher, notice
 from stock_choice import db
-import time
-import datetime
 from stock_choice import settings
-import pandas as pd
+from stock_choice import utils
+from stock_choice.strategy import backtrace_ma250
+from stock_choice.strategy import breakthrough_platform
+from stock_choice.strategy import enter as enter
+from stock_choice.strategy import keep_increasing
+from stock_choice.strategy import parking_apron
+from stock_choice.strategy import turtle_trade
 from tools.sqlite_handle import SqliteDB
+
 
 def process():
     logging.info("************************ process start ***************************************")
@@ -42,7 +43,6 @@ def process():
         stocks = [tuple(x) for x in subset.values]
 
     if utils.need_update_data():
-        utils.prepare()
         data_fetcher.run(stocks)
         check_exit()
 

@@ -42,8 +42,7 @@ def next_weekday(date):
     return pd.to_datetime(date) + BDay()
 
 
-def prepare():
-    dirs = [settings.DB_DIR]
+def prepare(dirs):
     for dir in dirs:
         if os.path.exists(dir):
             return

@@ -1,7 +1,4 @@
 import _sqlite3 as sqlite
-import datetime
-
-from pandas.tseries.offsets import BDay
 
 from stock_choice import settings
 

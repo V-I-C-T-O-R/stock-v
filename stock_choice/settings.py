@@ -1,4 +1,9 @@
 import os
+
+import logging
+
+from stock_choice import utils
+
 current_dir = os.path.dirname(os.path.abspath(__file__))
 from tools.sqlite_handle import SqliteDB
 
@@ -17,3 +22,11 @@ def init():
     TUSHARE_TOKEN = '1ba4asdasd2dd76b10dfsdfsdf3d61320054c870i0jojob641ad1987b46064'
     db = SqliteDB(SQLITE_DB_NAME)
     db.execute_handle_file(PRE_SQL)
+
+    LOG_DIR = current_dir + '/logs'
+
+    dirs = [DB_DIR,LOG_DIR]
+    utils.prepare(dirs)
+
+    logging.basicConfig(format='%(asctime)s %(levelname)s %(message)s',datefmt='%Y-%b-%d-%H:%M:%S', filename=LOG_DIR + '/info.log')
+    logging.getLogger().setLevel(logging.INFO)
