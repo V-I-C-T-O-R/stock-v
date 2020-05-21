@@ -3,6 +3,7 @@ Stock-V
 > 炒股有风险,投资需谨慎
 
 糅合[Sequoia](https://github.com/sngyai/Sequoia)与[py_stock](https://github.com/geeeeeeeek/py_stock)项目功能，统一展现
+关于两个项目的详情,请自行前往上述地址查阅
 
 ##### 所做工作
 * py_stock项目web接口化,定时生成最新看板
@@ -32,7 +33,7 @@ Stock-V
 
 4. 启动py_stock服务,直接python run.py. web访问http://localhost:8080访问
 效果如图:
-![2.png](images/2.png?raw=true "行情看板")
+![2.png](pic/2.png?raw=true "行情看板")
 
 5. 启动Sequoia,直接python stock_choice/god_choice.py. 通过企业微信小助手通知便可得到结果
 效果如图:
