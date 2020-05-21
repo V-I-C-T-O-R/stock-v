@@ -1,9 +1,8 @@
 Stock-V
 ----------
-> 炒股有风险,投资需谨慎
+> 炒股有风险，投资需谨慎
 
-糅合[Sequoia](https://github.com/sngyai/Sequoia)与[py_stock](https://github.com/geeeeeeeek/py_stock)项目功能，统一展现
-关于两个项目的详情,请自行前往上述地址查阅
+糅合[Sequoia](https://github.com/sngyai/Sequoia)与[py_stock](https://github.com/geeeeeeeek/py_stock)项目功能，统一展现。关于两个项目的详情,请自行前往上述地址查阅
 
 ##### 所做工作
 * py_stock项目web接口化,定时生成最新看板
