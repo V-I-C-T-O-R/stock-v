@@ -97,7 +97,7 @@ class SqliteDB:
 
 if __name__ == '__main__':
     settings.init()
-    db = SqliteDB(settings.DB_NAME)
+    db = SqliteDB(settings.SQLITE_DB_NAME)
 
     # db.execute_handle('drop table stock_work_day_data')
     db.execute_handle('create index code_index on stock_work_day_data(code, date_day)')
