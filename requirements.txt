@@ -1,5 +1,5 @@
 beautifulsoup4==4.9.0
-bottle==0.12.18
+bottle==0.12.19
 bs4==0.0.1
 certifi==2020.4.5.1
 chardet==3.0.4
