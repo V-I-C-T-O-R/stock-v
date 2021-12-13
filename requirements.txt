@@ -4,7 +4,7 @@ bs4==0.0.1
 certifi==2020.4.5.1
 chardet==3.0.4
 idna==2.8
-lxml==4.3.4
+lxml==4.6.5
 mock==3.0.5
 numexpr==2.7.1
 numpy==1.16.4
